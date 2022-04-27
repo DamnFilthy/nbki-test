@@ -1,18 +1,38 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="description">
+    Тестовое задание в команию - Национальное бюро кредитных историй (НБКИ) <br>
+    разработчик: Ширяев А.А.
+  </div>
+  <div>
+    <h2 class="title">Сделать одностраничное приложение Vue c кнопкой «Сгенерировать», при нажатии на которую показывается таблица из 4 столбцов и 50 строк со случайными данными.</h2>
+    <div class="info">
+      <p>Столбцы:</p>
+      <ul>
+        <li>Наименование (строка) = случайная последовательность 5 русских букв;</li>
+        <li>Цена (с плавающей запятой) = случайное число от 0.01 до 1000.00;</li>
+        <li>Количество (целое) = случайное число от 1 до 100;</li>
+        <li>Стоимость (с плавающей запятой) = Цена * Количество.</li>
+      </ul>
+      <p>Под таблицей показать итоговую стоимость (сумму поля "Стоимость" по всем строкам).</p>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  name: 'Home'
 }
 </script>
+<style lang="scss">
+  .description{
+    margin-bottom: 50px;
+  }
+  .title{
+    margin-bottom: 30px;
+  }
+  .info{
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+  }
+</style>
